@@ -98,7 +98,7 @@ document.addEventListener('mousemove', (event) => {
     mouseY = (event.clientY - windowHalfY);
 });
 
-// --- 6. GSAP SCROLL CHOREOGRAPHY ---
+// --- 6. GSAP SCROLL REVEAL ---
 if (typeof gsap !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({
@@ -114,7 +114,6 @@ if (typeof gsap !== 'undefined') {
     tl.to(camera.rotation, { x: -0.3, y: 0, ease: "power1.inOut" }, 2);
     tl.to(galaxyGroup.rotation, { x: 0, z: 0, y: Math.PI, ease: "power1.inOut" }, 2);
 
-    // Reveal loop handles cards, timeline items, and icons
     gsap.utils.toArray('.about-content, .project-card, .timeline-content, .social-icon-btn').forEach(el => {
         gsap.fromTo(el, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out", scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play reverse play reverse" } });
     });
