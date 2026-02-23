@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Pranjal Chakraborty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="terminal-text">
+            > Accessing academic archives...<br>
+            > Retrieving publication data...<br>
+            > Compiling records: <span id="progress">0</span>%
+        </div>
+    </div>
+
+    <canvas id="galaxy-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">Pranjal Chakraborty</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Research</a></li>
+            <li><a href="publications.html" style="color: var(--primary-color);">Publications</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-container">
+        <section id="full-publications" class="projects-section" style="padding-top: 150px; min-height: auto;">
+            <div class="container">
+                <h1 class="section-title" style="font-size: 4rem; margin-bottom: 1rem;">Publication Record</h1>
+                <p class="mono" style="text-align: center; color: var(--text-dim); margin-bottom: 4rem;">Sorted by year</p>
+                
+                <div class="projects-grid" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto;">
+                    
+                    <h2 class="mono" style="color: var(--primary-color); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; margin-top: 2rem;">[ Working Papers / 2026 ]</h2>
+
+                    <div class="project-card">
+                        <h3 style="margin-bottom: 0.5rem;">Magnetically Induced Transparency in Warm Plasma Environments</h3>
+                        <p class="mono" style="color: var(--primary-color); font-size: 0.9rem; margin-bottom: 1rem;">In Preparation</p>
+                        <p><strong>Pranjal Chakraborty</strong>, Co-Author A.</p>
+                        <p>Detailed benchmarking of the Smilei Particle-in-Cell code applied to warm plasma environments exhibiting magnetically induced transparency.</p>
+                        <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+                            <a href="#" class="project-link">Draft PDF</a>
+                            <a href="#" class="project-link">Simulation Code</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="index.html" class="btn-primary" style="display: inline-block;">
+                        <span class="mono">← Return to Main Terminal</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
